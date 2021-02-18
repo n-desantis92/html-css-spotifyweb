@@ -14,13 +14,16 @@ body {
 /* typo */
 h2 {
   width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 ul {
   list-style: none;
 }
 /* aside */
 aside {
-
+  position: relative;
   flex-wrap: wrap;
   width: 250px;
   height: calc(100% - 80px);
@@ -36,9 +39,25 @@ aside nav ul li {
   display: block;
 }
 
-.sotto-ul {
-  overflow: auto;
+.sotto-nav {
+
 }
+
+ul.sotto-ul {
+  overflow: auto;
+  max-height: 30vh;
+
+}
+/* aside-bottom */
+.aside-bottom {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+/* aside-bottom */
 /* /aside */
 /* main */
 main {
@@ -48,7 +67,9 @@ main {
   align-content: flex-start;
   width: calc(100% - 250px);
   height: calc(100% - 80px);
-  background-color: grey;
+  background-color: rgb(20,25,34);
+  padding: 5px;
+  overflow-y: auto;
 }
 
 /* main-top */
@@ -79,21 +100,41 @@ main {
 /* /main-top */
 
 .container-generi {
-  background-color: red;
   margin-top: 60px;
   display: flex;
   width: 100%;
   height: 30px;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
+.container-generi li {
+  padding: 0 10px;
+}
 .container-generi ul li {
   display: inline-block;
 }
 
 .container-cover {
-  background-color: blue;
+  width: 100%;
+  display: flex;
+}
+
+.cover-item {
+  width: calc((100% / 6) - 10px);
+  margin: 0 5px;
+  text-align: center;
+}
+
+.cover-item img {
+  width: 100%;
+}
+
+.cover-item h4 {
+  padding: 10px 0;
 }
 /* /main */
 
