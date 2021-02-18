@@ -111,12 +111,26 @@ main {
   text-transform: uppercase;
 }
 
-.container-generi li {
-  padding: 0 10px;
-}
 .container-generi ul li {
   display: inline-block;
+  padding: 5px 10px;
+  position: relative;
 }
+
+.container-generi li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:30%;
+  width: 40%;
+  height: 3px;
+  background-color: #1DB954;
+}
+/*
+.container-generi li:hover {
+  visibility: visible;
+  cursor: pointer;
+} */
 
 .container-cover {
   width: 100%;
