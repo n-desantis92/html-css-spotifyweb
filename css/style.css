@@ -12,6 +12,9 @@ body {
 }
 
 /* typo */
+h2 {
+  width: 100%;
+}
 ul {
   list-style: none;
 }
@@ -41,6 +44,8 @@ aside nav ul li {
 main {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   width: calc(100% - 250px);
   height: calc(100% - 80px);
   background-color: grey;
@@ -85,6 +90,10 @@ main {
 
 .container-generi ul li {
   display: inline-block;
+}
+
+.container-cover {
+  background-color: blue;
 }
 /* /main */
 
