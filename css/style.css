@@ -198,8 +198,12 @@ main {
 
 .title {
   margin-bottom: 20px;
+  margin-left: 5px;
+  font-weight: 600;
 }
-
+.title p {
+  font-size: 12px;
+}
 .container-cover {
   width: 100%;
   display: flex;
@@ -309,6 +313,20 @@ footer {
   height: 80px;
 }
 
+.row-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.row-up i {
+  margin: 10px 10px;
+}
+
+i.fa-play-circle {
+  font-size: 30px;
+}
 /* /center */
 /* right */
 .right {
