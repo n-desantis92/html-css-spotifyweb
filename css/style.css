@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #666666;
 }
 
 .container {
@@ -58,7 +59,7 @@ aside nav {
 
 aside nav ul li {
   padding: 0 20px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 aside li img {
@@ -68,6 +69,7 @@ aside li img {
 aside nav ul li h4 {
   padding-left: 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .sotto-nav .plus {
@@ -91,7 +93,7 @@ ul.sotto-ul {
 }
 
 .sotto-ul li {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 /* aside-bottom */
 .aside-bottom {
@@ -123,7 +125,8 @@ main {
   justify-content: flex-end;
   align-items: center;
   height: 60px;
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
