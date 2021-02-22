@@ -151,7 +151,9 @@ ul.sotto-ul {
   margin-bottom: 5px;
 }
 
-.aside-bottom p:hover {
+.aside-bottom p:hover,
+.aside-bottom i:hover,
+.aside-bottom img:hover {
   color: #fff;
   cursor: pointer;
 }
@@ -171,7 +173,6 @@ align-items: center;
 
 .profilo p {
   margin-bottom: 0;
-
 }
 
 .aside-bottom .fa-arrow-alt-circle-down {
