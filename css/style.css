@@ -280,6 +280,14 @@ main {
   text-align: center;
 }
 
+.cover-item h4,
+.cover-item p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .cover-item img {
   width: 100%;
   overflow: hidden;
@@ -441,7 +449,7 @@ i.fa-play-circle {
 .lv_time_line {
   position: absolute;
   left: 0;
-  width: 100px;
+  width: 20%;
   height: 3px;
   border-radius: 3px;
   background-color: white;
@@ -453,16 +461,18 @@ i.fa-play-circle {
   position: absolute;
   background-color: #fff;
   border-radius: 50%;
+  visibility: hidden;
 }
 
 .time_line .cursor_circle {
-  left: 100px;
+  left: 20%;
 }
 
 .time_line:hover .lv_time_line ,
 .time_line:hover .cursor_circle {
   cursor: pointer;
   background-color: lime;
+  visibility: visible;
 }
 /* /center */
 /* right */
@@ -484,9 +494,10 @@ i.fa-play-circle {
   align-items: center;
   height: 3px;
   background-color: #666666;
-  width: 100px;
+  width: 30%;
   position: relative;
   border-radius: 3px;
+  margin-right: 10px;
 }
 
 .option_right i:hover {
@@ -498,20 +509,21 @@ i.fa-play-circle {
 .lv_vol {
   position: absolute;
   left: 0;
-  width: 30px;
+  width: 30%;
   height: 3px;
   border-radius: 3px;
   background-color: white;
 }
 
 .vol_line .cursor_circle {
-  left: 30px;
+  left: 30%;
 }
 
 .vol_line:hover .lv_vol ,
 .vol_line:hover .cursor_circle {
   cursor: pointer;
   background-color: lime;
+  visibility: visible;
 }
 /* /right */
 /* /footer */
@@ -593,5 +605,21 @@ i.fa-play-circle {
 
   .fix-up {
     left: 100px;
+  }
+/* footer */
+  .option_left {
+    margin-left: 10px;
+  }
+
+  .in_ascolto img {
+    width: 40px;
+  }
+
+  .option_right i {
+    margin: 0 5px;
+  }
+
 }
+
+
 /* /media */
