@@ -71,6 +71,16 @@ aside li img {
   width: 30px;
 }
 
+aside li {
+  transition: transform 0.5s linear;
+}
+
+.lista-nav li:hover {
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .playlist h4, .sotto-nav {
   padding-left: 20px;
   margin-top: 20px;
@@ -85,10 +95,14 @@ aside li img {
   margin-right: 5px;
 }
 
-.sotto-nav h5 {
+.sotto-nav button {
   display: flex;
   margin: 5px 0;
   align-items: center;
+  background-color: transparent;
+  border: 0px;
+  color: #666666;
+  transition: transform 0.5s linear;
 }
 
 ul.sotto-ul {
@@ -98,6 +112,23 @@ ul.sotto-ul {
 
 .sotto-ul li {
   margin: 10px 0;
+  font-size: 13px;
+  width: 200px;
+  transition: transform 0.5s linear;
+}
+
+.sotto-nav button:hover,
+.sotto-nav li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.sotto-nav button:hover {
+  transform: scale(1.1);
+}
+
+.sotto-nav li:hover {
+  transform: scale(0.9);
 }
 /* aside-bottom */
 .aside-bottom {
@@ -112,6 +143,29 @@ ul.sotto-ul {
 .aside-bottom p {
   font-size: 13px;
   margin-bottom: 5px;
+}
+
+.aside-bottom p:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.aside-bottom img {
+  width: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 5px;
+}
+
+.profilo {
+display: flex;
+padding: 5px 0;
+align-items: center;
+}
+
+.profilo p {
+  margin-bottom: 0;
+
 }
 
 .aside-bottom .fa-arrow-alt-circle-down {
@@ -167,7 +221,7 @@ main {
   border-color: #1DB954;
 }
 /* /main-top */
-
+/* generi */
 .container-generi {
   margin-top: 60px;
   display: flex;
@@ -199,6 +253,7 @@ main {
   height: 3px;
   background-color: #1DB954;
 }
+/* /generi */
 
 .title {
   margin-bottom: 20px;
@@ -269,6 +324,7 @@ main {
   overflow: hidden;
   box-shadow: 20px 15px 20px -10px rgba( 0,0,0,0.6);
 }
+
 /* /main */
 /* footer */
 footer {
@@ -311,11 +367,13 @@ footer {
   margin-left: 50px;
 }
 
-.fa-folder {
-  margin-left: 5px;
+.option_left i {
+  margin-right: 5px;
+  transition: transform 0.5s linear;
 }
 
 .option_left i:hover {
+  transform: scale(1.1);
   cursor: pointer;
   color: #fff;
 }
@@ -449,3 +507,25 @@ i.fa-play-circle {
 }
 /* /right */
 /* /footer */
+
+/* media */
+@media screen and (max-width: 992px) {
+  .container-cover {
+    flex-wrap: wrap;
+  }
+
+  .cover-item {
+    width: calc((100% / 4) - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-cover {
+    flex-wrap: wrap;
+  }
+
+  .cover-item {
+    width: calc((100% / 2) - 10px);
+  }
+}
+/* /media */
