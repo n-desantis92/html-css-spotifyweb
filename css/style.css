@@ -52,7 +52,7 @@ aside {
 }
 
 .logo {
-  width: 15%;
+  width: 35px;
 }
 
 aside nav {
@@ -127,6 +127,11 @@ ul.sotto-ul {
   transform: scale(1.1);
 }
 
+.sotto-nav button:hover .plus {
+  background-color: #fff;
+  color: #000;
+}
+
 .sotto-nav li:hover {
   transform: scale(0.9);
 }
@@ -141,6 +146,7 @@ ul.sotto-ul {
 }
 
 .aside-bottom p {
+  display: inline-block;
   font-size: 13px;
   margin-bottom: 5px;
 }
@@ -339,7 +345,7 @@ footer {
 }
 /* left */
 .in_ascolto {
-  width: 250px;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -380,7 +386,7 @@ footer {
 /* /left */
 /* center */
 .player {
-  width: 50%;
+  width: 30%;
   height: 80px;
 }
 
@@ -461,7 +467,7 @@ i.fa-play-circle {
 /* /center */
 /* right */
 .option_right {
-  width: 250px;
+  width: 25%;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -470,6 +476,7 @@ i.fa-play-circle {
 
 .option_right i {
   margin: 0 10px;
+  transition: transform 0.5s linear;
 }
 
 .vol_line {
@@ -485,6 +492,7 @@ i.fa-play-circle {
 .option_right i:hover {
   cursor: pointer;
   color: #fff;
+  transform: scale(1.1);
 }
 
 .lv_vol {
@@ -509,7 +517,7 @@ i.fa-play-circle {
 /* /footer */
 
 /* media */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .container-cover {
     flex-wrap: wrap;
   }
@@ -519,13 +527,71 @@ i.fa-play-circle {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container-cover {
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 992px) {
 
   .cover-item {
     width: calc((100% / 2) - 10px);
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  .cover-item {
+    width: calc((100% / 2) - 10px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  aside {
+    width: 100px;
+  }
+
+  .container-logo {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .container-logo h1 {
+    display: none;
+  }
+
+  .lista-nav > li {
+    padding: 0 auto;
+    justify-content: center;
+  }
+
+  .lista-nav p {
+    display: none;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .aside-bottom p {
+    display: none;
+  }
+
+  .aside-bottom hr {
+    display: none;
+  }
+
+  .as-bt-up {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .profilo img {
+    margin: 5px auto
+  }
+
+  main {
+    width: calc(100% - 100px);
+  }
+
+  .fix-up {
+    left: 100px;
 }
 /* /media */
