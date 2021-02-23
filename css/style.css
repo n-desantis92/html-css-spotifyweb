@@ -560,6 +560,7 @@ i.fa-play-circle {
 
   aside {
     width: 100px;
+    height: calc(100% - 120px);
   }
 
   .container-logo {
@@ -604,23 +605,48 @@ i.fa-play-circle {
 
   main {
     width: calc(100% - 100px);
+    height: calc(100% - 120px);
   }
 
   .fix-up {
     left: 100px;
   }
 /* footer */
+  footer {
+    flex-wrap: wrap;
+    height: 120px;
+  }
+
+  .player {
+    width: 100%;
+    height: 50px;
+    order: -1;
+    margin-bottom: 10px;
+  }
+
   .option_left {
     margin-left: 10px;
+  }
+
+  .in_ascolto {
+    width: 50%;
+    height: 60px;
+    padding: 10px;
   }
 
   .in_ascolto img {
     width: 40px;
   }
 
+    .option_right {
+      height: 60px;
+      width: 50%;
+    }
+
   .option_right i {
     margin: 0 5px;
   }
+
 
 }
 
