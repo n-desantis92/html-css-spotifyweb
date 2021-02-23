@@ -79,6 +79,7 @@ aside li {
   color: white;
   transform: scale(1.05);
   cursor: pointer;
+  border-left: 2px solid lime;
 }
 
 .playlist h4, .sotto-nav {
@@ -206,6 +207,7 @@ main {
   left: 250px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: top 0.5s linear;
 }
 
 .upgrade {
@@ -622,5 +624,10 @@ i.fa-play-circle {
 
 }
 
+@media screen and (max-height: 500px) {
+  .fix-up {
+    top: -60px;
+  }
+}
 
 /* /media */
